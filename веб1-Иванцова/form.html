@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Обратная связь</title>
+<link rel="stylesheet" href="1.css">
+	<style>
+		#form_message{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border-radius: 5px;
+	margin:10px;
+	padding: 10px;
+	width: 320px;
+	height:430px;
+	text-align: center;
+}
+
+#form_message input,textarea{
+	border-radius: 5px;
+	width: 170px;
+}
+
+#submit{
+	height: 40px;
+	/*float: right;*/
+
+}
+
+#form_message h2{
+	text-align: center;
+}
+	</style>
+</head>
+<body>
+<div id="c">
+<p>
+<a href="лаб1.html">Главная</a>
+<a href="история.html">История города</a>
+<a href="Инфраструктура города.html">Инфраструктура города</a>
+<a href="культура и искусство.html">Культура и искусство в городе</a>
+<a href="form.html">Обратная связь</a>
+</p>
+</div>
+<div id="center">
+		<center><form name="form" action=" " id="form_message">
+		<h2>Форма обратной связи.</h2>
+		<p> <div class="titles">Ваше имя*</div> <input class="input" name="name"                                      type="text" required placeholder="Ваше имя"/> </p>
+		 
+		<p> <div class="titles">Электронная почта*</div> <input class="input"                                       name="email" type="text" required placeholder="Электронная почта"/> </p>
+		 
+		<p> <div class="titles">Тема сообщения</div> <input class="input"                                         name="subjects" type="text" required placeholder="Тема сообщения"/> </p>
+		 
+		<p> <div class="titles">Текст сообщения:</div><textarea name="message"                                      cols="20" rows="5" onFocus="this.form.submit.disabled=0" required placeholder="Текст сообщения"/ ></textarea></p>
+		<p><input id="submit" value="Отправить" type="submit" disabled /></p>
+	</form></center>
+</div>
+</body>
